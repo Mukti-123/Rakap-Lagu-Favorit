@@ -2,7 +2,7 @@
 
 Aplikasi C++ untuk mengelola dan merekap daftar lagu favorit dengan fitur tracking jumlah pemutaran.
 
-## 📋 Deskripsi Program
+##  Deskripsi Program
 
 Program ini memungkinkan pengguna untuk:
 - **Menginput lagu favorit** dengan judul dan jumlah pemutaran
@@ -11,24 +11,24 @@ Program ini memungkinkan pengguna untuk:
 - **Mengurutkan lagu** berdasarkan jumlah pemutaran (descending)
 - **Kelola data** dengan antarmuka menu interaktif
 
-## 🎯 Fitur yang Sudah Diimplementasikan (60%)
+## Fitur yang Sudah Diimplementasikan (60%)
 
-✅ **Menu Utama** - Navigasi antar fitur dengan pilihan menu
-✅ **Input Lagu Awal** - Memasukkan lagu favorit saat program dimulai (minimal 2 lagu)
-✅ **Input Lagu Baru** - Menambahkan lagu baru ke dalam daftar
-✅ **Tampilkan Semua Lagu** - Menampilkan daftar lengkap lagu dengan jumlah pemutaran
-✅ **Validasi Input** - Validasi untuk jumlah lagu awal minimal 2
-✅ **Penyimpanan Data** - Array untuk menyimpan hingga 100 lagu
+**Menu Utama** - Navigasi antar fitur dengan pilihan menu
+**Input Lagu Awal** - Memasukkan lagu favorit saat program dimulai (minimal 2 lagu)
+**Input Lagu Baru** - Menambahkan lagu baru ke dalam daftar
+**Tampilkan Semua Lagu** - Menampilkan daftar lengkap lagu dengan jumlah pemutaran
+**Validasi Input** - Validasi untuk jumlah lagu awal minimal 2
+**Penyimpanan Data** - Array untuk menyimpan hingga 100 lagu
 
 ## 🔧 Fitur yang Masih Dikembangkan (40%)
 
-⏳ **Cari Lagu Favorit** - Fitur pencarian lagu berdasarkan judul atau frekuensi pemutaran
-⏳ **Urutkan Lagu** - Mengurutkan lagu berdasarkan jumlah pemutaran (ascending/descending)
-⏳ **Edit Data Lagu** - Mengubah judul atau jumlah pemutaran lagu
-⏳ **Simpan/Load File** - Menyimpan data ke file dan membaca kembali
+**Cari Lagu Favorit** - Fitur pencarian lagu berdasarkan judul atau frekuensi pemutaran
+**Urutkan Lagu** - Mengurutkan lagu berdasarkan jumlah pemutaran (ascending/descending)
+**Edit Data Lagu** - Mengubah judul atau jumlah pemutaran lagu
+**Simpan/Load File** - Menyimpan data ke file dan membaca kembali
 
 
-## 📝 Cara Menggunakan
+## Cara Menggunakan
 
 1. Jalankan program
 2. Masukkan jumlah lagu awal (minimal 2)
@@ -40,7 +40,7 @@ Program ini memungkinkan pengguna untuk:
    - `4` - Urutkan lagu (sedang dikembangkan)
    - `5` - Keluar program
 
-## 📊 Struktur Data
+##  Struktur Data
 
 ```
 Max Kapasitas Lagu: 100
@@ -49,11 +49,11 @@ Max Kapasitas Lagu: 100
 ```
 
 
-## 👤 Author
+##  Author
 
 **Mukti Risq Syahphoan**
 
-## 📅 Versi
+##  Versi
 
 v1.0 (Beta) - In Progress
 
