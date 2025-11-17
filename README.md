@@ -48,19 +48,6 @@ Max Kapasitas Lagu: 100
 - Jumlah Diputar (integer)
 ```
 
-## 📈 Progress Project
-
-**Total Completion: 60%**
-
-| Fitur | Status | Progress |
-|-------|--------|----------|
-| Menu & Interface | ✅ Selesai | 100% |
-| Input & Validasi | ✅ Selesai | 100% |
-| Tampilkan Data | ✅ Selesai | 100% |
-| Pencarian Lagu | ⏳ Sedang Dikerjakan | 0% |
-| Sorting/Urutkan | ⏳ Sedang Dikerjakan | 0% |
-| Edit & Hapus | ⏳ Belum Dimulai | 0% |
-| Simpan/Load File | ⏳ Belum Dimulai | 0% |
 
 ## 👤 Author
 
