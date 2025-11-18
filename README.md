@@ -1,59 +1,93 @@
-# Program Rekap Lagu Favorit
+# 🎵 Program Rekap Lagu Favorit
 
 Aplikasi C++ untuk mengelola dan merekap daftar lagu favorit dengan fitur tracking jumlah pemutaran.
 
-##  Deskripsi Program
+## 📋 Deskripsi Program
 
 Program ini memungkinkan pengguna untuk:
 - **Menginput lagu favorit** dengan judul dan jumlah pemutaran
 - **Menampilkan semua lagu** yang telah diinput
-- **Mencari lagu favorit** berdasarkan kriteria tertentu
-- **Mengurutkan lagu** berdasarkan jumlah pemutaran (descending)
+- **Mencari lagu favorit** (lagu dengan jumlah diputar tertinggi)
+- **Mengurutkan lagu** berdasarkan jumlah pemutaran (sedang dikembangkan)
 - **Kelola data** dengan antarmuka menu interaktif
 
-## Fitur yang Sudah Diimplementasikan (60%)
 
-**Menu Utama** - Navigasi antar fitur dengan pilihan menu
-**Input Lagu Awal** - Memasukkan lagu favorit saat program dimulai (minimal 2 lagu)
-**Input Lagu Baru** - Menambahkan lagu baru ke dalam daftar
-**Tampilkan Semua Lagu** - Menampilkan daftar lengkap lagu dengan jumlah pemutaran
-**Validasi Input** - Validasi untuk jumlah lagu awal minimal 2
-**Penyimpanan Data** - Array untuk menyimpan hingga 100 lagu
+### Fitur yang Sudah Selesai (50%)
+✅ **Menu Utama** - Navigasi antar fitur dengan pilihan menu 1-5  
+✅ **Input Lagu Awal** - Memasukkan lagu favorit saat program dimulai (minimal 2 lagu)  
+✅ **Input Lagu Baru** - Menambahkan lagu baru ke dalam daftar dinamis  
+✅ **Tampilkan Semua Lagu** - Menampilkan daftar lengkap lagu dengan jumlah pemutaran  
+✅ **Validasi Input** - Validasi untuk jumlah lagu awal minimal 2  
+✅ **Cari Lagu Favorit** - Menampilkan lagu dengan jumlah diputar tertinggi
 
-## 🔧 Fitur yang Masih Dikembangkan (40%)
+### Fitur yang Sedang Dikembangkan
+⏳ **Urutkan Lagu** - Sorting menggunakan Bubble Sort (placeholder sudah ada)
 
-**Cari Lagu Favorit** - Fitur pencarian lagu berdasarkan judul atau frekuensi pemutaran
-**Urutkan Lagu** - Mengurutkan lagu berdasarkan jumlah pemutaran (ascending/descending)
-**Edit Data Lagu** - Mengubah judul atau jumlah pemutaran lagu
-**Simpan/Load File** - Menyimpan data ke file dan membaca kembali
+### Fitur yang Belum Dimulai (50%)
+ Implementasi lengkap Bubble Sort  
+ Edit data lagu yang ada  
+ Hapus lagu dari daftar  
+ Simpan data ke file  
+ Baca data dari file
 
 
-## Cara Menggunakan
 
+### Contoh Alur Penggunaan
 1. Jalankan program
-2. Masukkan jumlah lagu awal (minimal 2)
-3. Input judul lagu dan jumlah pemutaran untuk setiap lagu
+2. Masukkan jumlah lagu awal (minimum 2)
+3. Input judul dan jumlah diputar untuk setiap lagu
 4. Pilih menu yang diinginkan:
-   - `1` - Tambah lagu baru
-   - `2` - Lihat semua lagu
-   - `3` - Cari lagu favorit (sedang dikembangkan)
-   - `4` - Urutkan lagu (sedang dikembangkan)
-   - `5` - Keluar program
+   - **Pilihan 1**: Tambah Lagu - Menambahkan lagu baru
+   - **Pilihan 2**: Tampilkan Semua Lagu - Melihat daftar semua lagu
+   - **Pilihan 3**: Cari Lagu Favorit - Melihat lagu paling banyak diputar
+   - **Pilihan 4**: Urutkan Lagu - Mengurutkan lagu (sedang dikembangkan)
+   - **Pilihan 5**: Keluar - Keluar dari program
 
-##  Struktur Data
+## Struktur Data
 
-```
-Max Kapasitas Lagu: 100
-- Judul Lagu (string)
-- Jumlah Diputar (integer)
-```
+```cpp
+const int MAX_LAGU = 100;           
+string judul[MAX_LAGU];             
+int diputar[MAX_LAGU];              
+int jumlahLagu = 0;               
 
 
-##  Author
 
-**Mukti Risq Syahphoan**
+## Fungsi-Fungsi yang Tersedia
 
-##  Versi
+| Fungsi | Deskripsi |
+|--------|-----------|
+| `inputLagu()` | Menambahkan lagu baru ke daftar |
+| `tampilkanLagu()` | Menampilkan semua lagu dengan nomornya |
+| `cariFavorit()` | Mencari dan menampilkan lagu favorit |
+| `bubbleSort()` | Placeholder untuk sorting (belum diimplementasikan) |
+| `menu()` | Tampilkan menu utama dan proses pilihan pengguna |
+| `main()` | Fungsi utama program |
 
-v1.0 (Beta) - In Progress
+## Spesifikasi Program
+
+- **Bahasa Pemrograman**: C++
+- **Platform**: Windows / Linux / macOS (cross-platform)
+- **Kapasitas Maksimal**: 100 lagu
+- **Input Minimal**: 2 lagu saat startup
+- **Penyimpanan Data**: Hanya dalam RAM (tidak ada file persistence)
+
+##  Catatan Penting
+
+- Data hanya tersimpan selama program berjalan
+- Jika program ditutup, semua data akan hilang
+- Fitur save/load data ke file akan ditambahkan di update mendatang
+- Sorting lagu akan segera diimplementasikan di versi selanjutnya
+
+## Rencana Pengembangan Selanjutnya
+
+- [ ] Implementasi Bubble Sort untuk mengurutkan lagu
+- [ ] Fitur edit data lagu
+- [ ] Fitur hapus lagu
+- [ ] Simpan data ke file CSV/TXT
+- [ ] Baca data dari file
+- [ ] Pencarian lagu berdasarkan nama
+- [ ] Statistik (rata-rata pemutaran, dll)
+
+
 
