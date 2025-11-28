@@ -1,45 +1,55 @@
-# 🎵 Program Rekap Lagu Favorit
+ Deskripsi Program
 
-Aplikasi C++ untuk mengelola dan merekap daftar lagu favorit dengan fitur tracking jumlah pemutaran.
+Program Rekap Lagu adalah aplikasi sederhana berbasis C++ yang digunakan untuk mencatat, menampilkan, mencari, dan mengurutkan daftar lagu berdasarkan jumlah pemutarannya. Program ini dibuat sebagai proyek akhir mata kuliah/pembelajaran struktur data dasar dengan fokus pada array, looping, fungsi, serta penggunaan algoritma pencarian dan pengurutan.
 
-## 📋 Deskripsi Program
+Program sudah sepenuhnya selesai dan berhasil dijalankan sesuai kebutuhan proyek.
 
-Program ini memungkinkan pengguna untuk:
-- **Menginput lagu favorit** dengan judul dan jumlah pemutaran
-- **Menampilkan semua lagu** yang telah diinput
-- **Mencari lagu favorit** (lagu dengan jumlah diputar tertinggi)
-- **Mengurutkan lagu** berdasarkan jumlah pemutaran (sedang dikembangkan)
-- **Kelola data** dengan antarmuka menu interaktif
+ Fitur Utama
+
+Input Lagu Baru
+Pengguna dapat menambahkan lagu baru ke dalam daftar.
+
+Tampilkan Semua Lagu
+Menampilkan seluruh lagu yang telah tersimpan dalam array.
+
+Cari Lagu Favorit
+Program mencari lagu dengan jumlah diputar paling banyak menggunakan algoritma linear search.
+
+Urutkan Lagu
+Mengurutkan lagu berdasarkan jumlah diputar dari yang terbesar ke terkecil menggunakan Bubble Sort.
+
+Keluar Program
+Menghentikan aplikasi.
+
+ Teknologi & Algoritma yang Digunakan
+
+Bahasa Pemrograman : C++
+
+Struktur Data : Array
+
+Algoritma Pencarian : Linear Search
+
+Algoritma Pengurutan : Bubble Sort
+
+Kontrol program menggunakan loop, percabangan, dan fungsi modular
+
+ Struktur File Program
+    LaguFavorit.cpp
+   README.md
 
 
-### Fitur yang Sudah Selesai (50%)
-✅ **Menu Utama** - Navigasi antar fitur dengan pilihan menu 1-5  
-✅ **Input Lagu Awal** - Memasukkan lagu favorit saat program dimulai (minimal 2 lagu)  
-✅ **Input Lagu Baru** - Menambahkan lagu baru ke dalam daftar dinamis  
-✅ **Tampilkan Semua Lagu** - Menampilkan daftar lengkap lagu dengan jumlah pemutaran  
-✅ **Validasi Input** - Validasi untuk jumlah lagu awal minimal 2  
-✅ **Cari Lagu Favorit** - Menampilkan lagu dengan jumlah diputar tertinggi
+ Status Proyek
 
-### Fitur yang Sedang Dikembangkan
-⏳ **Urutkan Lagu** - Sorting menggunakan Bubble Sort (placeholder sudah ada)
+ Selesai 100%
 
-### Fitur yang Belum Dimulai (50%)
- Implementasi lengkap Bubble Sort  
- Edit data lagu yang ada  
- Hapus lagu dari daftar  
- Simpan data ke file  
- Baca data dari file
+Semua fitur telah diuji dan berjalan sesuai dengan skenario yang direncanakan. Program juga telah melalui serangkaian pengujian seperti input awal, penambahan lagu, pencarian favorit, dan pengurutan data.
 
+ Kontribusi
 
+Program ini dikerjakan oleh dua anggota dengan pembagian tugas sebagai berikut:
 
-### Contoh Alur Penggunaan
-1. Jalankan program
-2. Masukkan jumlah lagu awal (minimum 2)
-3. Input judul dan jumlah diputar untuk setiap lagu
-4. Pilih menu yang diinginkan:
-   - **Pilihan 1**: Tambah Lagu - Menambahkan lagu baru
-   - **Pilihan 2**: Tampilkan Semua Lagu - Melihat daftar semua lagu
-   - **Pilihan 3**: Cari Lagu Favorit - Melihat lagu paling banyak diputar
-   - **Pilihan 4**: Urutkan Lagu - Mengurutkan lagu (sedang dikembangkan)
-   - **Pilihan 5**: Keluar - Keluar dari program
+Saya
+Mengembangkan fitur Cari Lagu Favorit, Urutkan Lagu, serta penyusunan alur program keseluruhan.
 
+Teman Satu Tim
+Mengembangkan fitur Input Lagu Baru dan Tampilkan Semua Lagu.
