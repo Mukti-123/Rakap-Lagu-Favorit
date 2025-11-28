@@ -9,7 +9,7 @@ int diputar[MAX_LAGU];
 int jumlahLagu = 0;
 
 
-void inputLagu() {
+void inputLaguBaru() {
     if (jumlahLagu >= MAX_LAGU) {
         cout << "Data penuh, tidak bisa menambah lagu lagi.\n";
         return;
@@ -26,7 +26,7 @@ void inputLagu() {
     cout << "Lagu berhasil ditambahkan!\n";
 }
 
-void tampilkanLagu() {
+void tampilkanSemuaLagu() {
     if (jumlahLagu == 0) {
         cout << "Belum ada data lagu.\n";
         return;
@@ -42,36 +42,83 @@ void tampilkanLagu() {
 
 
 void cariFavorit() {
-    cout << "\n .\n";
+    if (jumlahLagu == 0) {
+        cout << "Belum ada data.\n";
+        return;
+    }
+
+    int maxIndex = 0;
+    for (int i = 1; i < jumlahLagu; i++) {
+        if (diputar[i] > diputar[maxIndex]) {
+            maxIndex = i;
+        }
+    }
+
+    cout << "\n=== Lagu Paling Favorit ===\n";
+    cout << "Judul : " << judul[maxIndex] << endl;
+    cout << "Jumlah Diputar : " << diputar[maxIndex] << " kali\n";
 }
+
 
 void bubbleSort() {
-    cout << "\n .\n";
+    for (int i = 0; i < jumlahLagu - 1; i++) {
+        for (int j = 0; j < jumlahLagu - i - 1; j++) {
+            if (diputar[j] < diputar[j + 1]) {
+
+                int temp = diputar[j];
+                diputar[j] = diputar[j + 1];
+                diputar[j + 1] = temp;
+
+                string tmpJ = judul[j];
+                judul[j] = judul[j + 1];
+                judul[j + 1] = tmpJ;
+            }
+        }
+    }
+
+    cout << "\nLagu berhasil diurutkan dari yang paling sering diputar.\n";
+    tampilkanSemuaLagu();
 }
 
-void menu() {
+void menuUtama() {
     int pilihan;
 
     do {
         cout << "\n=== MENU UTAMA ===\n";
-        cout << "1. Tambah Lagu\n";
+        cout << "1. Input Lagu Baru\n";
         cout << "2. Tampilkan Semua Lagu\n";
-        cout << "3. Cari Lagu Favorit \n";
+        cout << "3. Cari Lagu Favorit\n";
         cout << "4. Urutkan Lagu \n";
         cout << "5. Keluar\n";
-        cout << "Pilih menu: ";
+        cout << "Masukkan pilihan: ";
         cin >> pilihan;
 
-        if (pilihan == 1) inputLagu();
-        else if (pilihan == 2) tampilkanLagu();
-        else if (pilihan == 3) cariFavorit();
-        else if (pilihan == 4) bubbleSort();
-        else if (pilihan == 5) cout << "Keluar program...\n";
-        else cout << "Pilihan salah! Coba lagi.\n";
+        if (pilihan == 1) {
+            inputLaguBaru();
+        }
+
+        if (pilihan == 2) {
+            tampilkanSemuaLagu();
+        }
+
+        if (pilihan == 3) {
+            cariFavorit();
+        }
+
+        if (pilihan == 4) {
+            bubbleSort();
+        }
+
+        if (pilihan == 5) {
+            cout << "Terimakasih Telah Menggunakan Program Ini...\n";
+        }
+
+        if (pilihan < 1 || pilihan > 5) {
+            cout << "Pilihan tidak valid! Coba lagi.\n";
+        }
 
     } while (pilihan != 5);
 }
-
 
 int main() {
     cout << "=== Program Rekap Lagu ===\n";
@@ -82,7 +129,7 @@ int main() {
         cin >> n;
 
         if (n < 2) {
-            cout << "⚠ Jumlah lagu minimal 2. Silakan input ulang.\n";
+            cout << "Jumlah minimal 2! Masukkan ulang.\n";
         }
 
     } while (n < 2);
@@ -99,7 +146,6 @@ int main() {
         jumlahLagu++;
     }
 
-    menu();
-
+    menuUtama();
     return 0;
 }
